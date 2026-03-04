@@ -44,7 +44,7 @@ body { overflow-x: hidden; }
 /* ===== NAVIGATION ===== */
 nav {
   position: fixed;
-  top: 0;
+  top: 2.25rem;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -497,12 +497,19 @@ section p strong {
 
 /* ===== LANGUAGE BAR ===== */
 .language-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   font-family: 'Inter', sans-serif;
   font-size: 0.75rem;
   color: var(--gray);
-  border-top: 1px solid rgba(240,236,228,0.05);
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(240,236,228,0.05);
 }
 
 .language-bar a {
@@ -576,6 +583,23 @@ footer a {
 </style>
 </head>
 <body>
+
+<!-- LANGUAGE BAR -->
+<div class="language-bar">
+  <span>Available in: </span>
+  <a href="#" class="active">English</a>
+  <a href="#">中文</a>
+  <a href="#">Русский</a>
+  <a href="#">العربية</a>
+  <a href="#">Español</a>
+  <a href="#">Français</a>
+  <a href="#">हिन्दी</a>
+  <a href="#">Português</a>
+  <a href="#">日本語</a>
+  <a href="#">한국어</a>
+  <a href="#">Deutsch</a>
+  <a href="#">Kiswahili</a>
+</div>
 
 <!-- NAV -->
 <nav id="nav">
@@ -779,23 +803,6 @@ footer a {
     <a href="#" class="cta-btn primary" onclick="shareDocument(); return false;">Share This Document</a>
     <a href="https://github.com/nobolee88/EARTHERREAL" class="cta-btn secondary" target="_blank">View the EARTHERREAL Architecture</a>
   </div>
-</div>
-
-<!-- LANGUAGE BAR -->
-<div class="language-bar">
-  <span>Available in: </span>
-  <a href="#" class="active">English</a>
-  <a href="#">中文</a>
-  <a href="#">Русский</a>
-  <a href="#">العربية</a>
-  <a href="#">Español</a>
-  <a href="#">Français</a>
-  <a href="#">हिन्दी</a>
-  <a href="#">Português</a>
-  <a href="#">日本語</a>
-  <a href="#">한국어</a>
-  <a href="#">Deutsch</a>
-  <a href="#">Kiswahili</a>
 </div>
 
 <!-- SOURCES -->
